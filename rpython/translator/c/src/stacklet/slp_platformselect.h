@@ -18,6 +18,8 @@
 #include "switch_mips64_gcc.h" /* gcc on mips64 */
 #elif defined(__GNUC__) && defined(__s390x__)
 #include "switch_s390x_gcc.h"
+#elif defined(__GNUC__) && defined(__loongarch_lp64) /* gcc on loongarch64 */
+#include "switch_loongarch64_gcc.h"
 #else
 #error "Unsupported platform!"
 #endif
